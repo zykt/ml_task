@@ -30,7 +30,7 @@ def load_data(input_file):
 train_topics, train_articles = load_data('news/news_train.txt')
 
 # vectorize data
-vectorizer = TfidfVectorizer(max_features=10000, norm='l1').fit(train_articles)
+vectorizer = TfidfVectorizer(max_features=30000, norm='l1').fit(train_articles)
 vectorized_train = vectorizer.transform(train_articles)
 print('Vectorising complete!')
 
